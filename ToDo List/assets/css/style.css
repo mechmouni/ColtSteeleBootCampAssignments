@@ -1,0 +1,85 @@
+body{
+
+background: #C04848;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+}
+
+.container {
+
+  
+    margin: 100px 20%;
+    overflow: hidden;
+    background-color: black;
+  
+}
+
+h3 {
+
+    text-align: center;
+    color: white;
+}
+
+input {
+
+    width: 100%;
+    padding: 15px; 
+    background-color: azure;
+
+}
+
+li {
+
+    padding: 15px 0px;
+    height: 40px;
+}
+
+ul li:hover {
+    background: #000;
+}
+
+li:nth-of-type(odd){
+
+   color: white;
+   background: #480048;
+
+}
+
+li:nth-of-type(even){
+
+    color: white;
+    background: #C04848;
+ 
+ }
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.todo {
+    list-style: none;
+    height: 20px;
+    margin: none;
+    padding: 15px;
+}
+
+.todoClicked {
+    text-decoration-line: line-through;
+    color: gray; 
+}
+
+.deleteIcon  {
+
+  width: 0px; 
+    height: 40px;
+    opacity: 0;
+}
+
+li:hover .deleteIcon {
+
+    width: 40px; 
+    transition: 0.2s linear;
+    opacity: 1;
+}

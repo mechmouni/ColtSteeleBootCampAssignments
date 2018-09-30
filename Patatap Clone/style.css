@@ -1,0 +1,11 @@
+body {
+
+    background: lightblue;
+}
+
+#myCanvas {
+
+background: black;
+height: 100vw;
+width: 100vh;
+}
