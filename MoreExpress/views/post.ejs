@@ -1,0 +1,9 @@
+<h1>Here are all the posts</h1>
+
+
+<% posts.forEach(element => { %>
+    
+<% console.log(element); %>
+<li> <strong> <%= element.title + ": " %> </strong>  <%= element.author %> </li>
+    
+<% }); %>
