@@ -1,13 +1,17 @@
 const express = require('express');
 const app = express();
 
+//marks public directories to use
+app.use(express.static("public"));
+app.set("view engine", "ejs");
+
 app.get('/', (req, res) => {
-    res.render("home.ejs");
+    res.render("home");
 });
 
 app.get('/fallinlovewith/:dog', (req, res) => {
      var thing = req.params.dog;
-    res.render("love.ejs", {puppy: thing});
+    res.render("love", {puppy: thing});
 });
 
 app.get('/posts', (req, res) => {
@@ -15,7 +19,7 @@ app.get('/posts', (req, res) => {
                 {title: "Post 2", author: "Mary"},
                 {title: "Posts are getting boring", author: "Casey"}
                 ]
-   res.render("post.ejs", {posts: posts});
+   res.render("post", {posts: posts});
 });
 
 
